@@ -1,0 +1,296 @@
+body {
+  background-color: #00cccc;
+	margin:1%;
+	font-size:125%;
+}
+
+h1 {
+	font-size: 3em; 
+  text-align: center;
+	font-weight: bold;
+  border-bottom: 3px solid red;
+  background-color: pink;
+}
+
+.other {
+  max-width:50%;
+  width:auto;
+  border: 3px solid blue;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div .line {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 20px;
+  align-items: center;
+  row-gap: 10px;
+}
+
+div .line img {
+  max-width:80%;
+  border: 3px solid blue;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div .line2 {
+  display: grid;
+  grid-template-columns: 100%;
+  padding: 20px;
+  align-items: center;
+}
+
+div .line2 img {
+  max-width:80%;
+  border: 3px solid blue;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+}
+
+div .line3 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 20px;
+  align-items: center;
+}
+
+div .line3 img {
+  max-width:80%;
+  border: 3px solid blue;
+  padding: 10px;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+	font-size: 2em; 
+	font-weight: bold;
+  margin-top: 15px;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+p, h1, h2 {
+  padding: 10px;
+}
+
+p {
+  background-color: magenta;
+  width:fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  border-radius: 25px;
+  border: 3px solid blue;
+}
+
+b {
+  font-weight:bold;
+}
+
+ol li {
+  list-style: decimal;
+  margin-left: 10%;
+  padding: 2px;
+}
+
+ol {
+  background-color: aquamarine;
+  border: 3px solid blue;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width:fit-content;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header, main, footer {
+	border: 3px solid red;
+	margin: 10px 0;
+}
+
+nav ul li {
+	background-color: pink;
+	padding:10px;
+	width:17%;
+	border:1px solid black;
+	display: inline-block;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+nav ul li a:hover {
+  background-color: magenta;
+}
+
+#current {
+  background-color:white;
+  text-transform: uppercase;
+  font-size:medium;
+  padding-top: 14px;
+}
+
+a:visited {
+  color:#0000FF;
+}
+
+#main > div p, h1, h2, h3 {
+  display: grid;
+  grid-template-columns: 5fr;
+  text-align:center;
+  gap: 15px;
+}
+
+.skip a {
+  background: pink;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+}
+
+.skip a:focus {
+  position: static;
+  top:0px;
+}
+
+.skip {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.last {
+  margin-bottom: 10px;
+}
+
+.colors {
+  margin-top: 200px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.colors p {
+  margin-bottom: 10px;
+}
+
+.colors button {
+  margin-left: 25%;
+  width: 100px;
+  background-color: lightgray;
+}
+
+.bottom {
+  text-align:center ;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.bottom button {
+  background-color: lightgray;
+}
+
+#def {
+  text-align:center ;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width:fit-content;
+  border-radius: 25px;
+  border: 3px solid white;
+  background-color: white;
+}
+
+@media screen and (min-width: 601px) {
+  nav ul {
+    margin-left: 10px;
+  }
+ 
+  nav ul li {
+    width:20%;
+  }
+
+  #current {
+    font-size:large;
+    padding-bottom: 11px;
+  }
+
+  .colors button {
+    margin-left: 35%;
+  }
+
+  div .line {
+    grid-template-columns: 33% 33% 33%;
+  }
+
+  .other {
+    max-width:50%;
+  }
+
+  div .line2 {
+    grid-template-columns: 33% 33% 33%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  nav ul {
+    margin-left: 15px;
+  }
+ 
+  nav ul li {
+    width:21%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  nav ul li {
+    width:22%;
+  }
+
+  .colors button {
+    margin-left: 45%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  nav ul li {
+    margin-left: 6px;
+  }
+
+  div .line {
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  nav ul li {
+    width:23%;
+  }
+
+  .other {
+    max-width:20%;
+  }
+}
